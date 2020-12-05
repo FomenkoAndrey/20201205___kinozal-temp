@@ -2,7 +2,12 @@
   text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
 }
 
+.header, .main, .left-sidebar {
+  margin-bottom: 80.0px;
+}
+
 .navbar-inverse {
+  margin-bottom: 0;
   background-color: #191919;
 }
 
@@ -31,6 +36,25 @@
 .navbar-toggle {
   float: none;
   margin-right: 0;
+}
+
+.panel {
+  background-color: #ebebeb;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #df8a13;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
 }
 
 html {
@@ -63,6 +87,10 @@ body {
   letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
+}
+
+.left-sidebar .panel:last-of-type {
+  margin-bottom: 0;
 }
 
 @media (min-width: 576px) {
