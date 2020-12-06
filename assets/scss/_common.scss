@@ -8,3 +8,29 @@ body {
   font-family: $font-main;
   font-size: $font-size;
 }
+
+h1 {
+  font-family: $font-header;
+
+  @include xs-min {
+    margin: (-$gap / 2) 0 ($gap * 3);
+
+    font-size: 3rem;
+  }
+  @include xs {
+    margin: 0 0 ($gap * 2);
+
+    font-size: 2rem;
+  }
+}
+
+a {
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    color: $color-accent;
+  }
+}
